@@ -1,0 +1,260 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yello-color: #ffc400;
+  --secton-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yello-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-title::after {
+  transform: translatex(-50%);
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  height: 2px;
+  width: 130px;
+  background-color: var(--green-color);
+}
+
+.main-title svg {
+  color: var(--yello-color);
+}
+
+/* start nav bar */
+
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar img {
+  max-width: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.navbar .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+  font-size: 25px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: inset 0 0 5px 0;
+}
+
+/* end nav bar */
+
+/* start landing */
+
+.landing {
+  background-color: var(--dark-color);
+  height: 400px;
+}
+
+/* end landing */
+
+/* start features */
+
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--secton-color);
+}
+
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.features .feat h4 {
+  color: var(--yello-color);
+}
+
+/* end features */
+
+/* start our work */
+
+.our-work {
+  background-color: var(--secton-color);
+}
+
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yello-color);
+  border-radius: 0.7rem;
+}
+
+.our-work li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #33d1cc96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+  transform: translateX(calc(0%));
+}
+
+/* end our work */
+
+/* start stuff */
+
+.stuff .desc {
+  max-width: 500px;
+}
+
+/* end stuff */
+
+/* start team */
+
+.team {
+  background-color: var(--secton-color);
+}
+
+.team h2 {
+  color: var(--yello-color);
+}
+
+.team .box h4 {
+  background-color: var(--green-color);
+}
+
+/* end team */
+
+/* start */
+
+.start {
+  background-color: var(--dark-color);
+}
+
+/* start */
+
+/* start blog */
+
+.blog .box {
+  border: 1px solid #bbbaba;
+  border-radius: 3px;
+}
+
+/* end blog */
+
+/* start subscribe */
+
+.subscribe {
+  background-color: var(--yello-color);
+}
+
+.subscribe input[type="text"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.subscribe input[type="text"]::placeholder {
+  color: #fff;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yello-color);
+}
+
+/* end subscribe */
+
+/* footer */
+
+footer {
+  background-color: var(--dark-color);
+}
+
+footer img {
+  max-width: 100px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+footer .copy-whrite .created span {
+  color: var(--green-color);
+}
+
+footer .copy-whrite .year span {
+  color: var(--yello-color);
+}
+
+footer svg:first-child {
+  background-color: var(--green-color);
+}
+
+footer svg:nth-child(2) {
+  background-color: #3195ff;
+}
+
+footer svg:nth-child(3) {
+  background-color: #3195ff;
+}
+
+footer svg:nth-child(4) {
+  background-color: var(--red-color);
+}
+
+/* footer */
